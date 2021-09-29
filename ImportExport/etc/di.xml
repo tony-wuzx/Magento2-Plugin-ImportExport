@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\CatalogImportExport\Model\Import\Product\Type\AbstractType" type="Zhixing\Catalog\Model\Import\Product\Type\AbstractType" />
+    <preference for="Magento\CatalogImportExport\Model\Import\Product\Validator"
+                type="Zhixing\ImportExport\Model\Import\Product\Validator" />
+    <preference for="Magento\ConfigurableImportExport\Model\Import\Product\Type\Configurable" type="Zhixing\ImportExport\Model\Import\Product\Type\Configurable" />
+    <preference for="Magento\CatalogImportExport\Model\Import\Product\Type\Simple" type="Zhixing\ImportExport\Model\Import\Product\Type\Simple" />
+    <type name="Magento\Ui\Model\Export\MetadataProvider">
+        <plugin name="grid_export_metadata_provider_csv_header_utf8_with_bom"
+                type="Lvmh\Core\Plugin\MetadataProviderPlugin"
+                sortOrder="1"/>
+    </type>
+</config>

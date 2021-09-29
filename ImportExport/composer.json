@@ -1,0 +1,25 @@
+{
+  "name": "Zhixing/importexport",
+  "description": "Zhixing ImportExport Module for Magento 2",
+  "homepage": "https://www.zhixing.com/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Zhixing",
+      "homepage": "https://www.zhixing.com/"
+    }
+  ],
+  "require": {
+    "php": ">=7.1"
+  },
+  "type": "magento2-module",
+  "version": "0.0.1",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Zhixing\\ImportExport\\": ""
+    }
+  }
+}
